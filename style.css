@@ -72,6 +72,31 @@ footer {
   margin-top: 2rem;
 }
 
+/* Estilo para redes sociais */
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+  filter: grayscale(1) brightness(1.2);
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
 /* Responsividade */
 
 @media (max-width: 600px) {
@@ -93,5 +118,10 @@ footer {
     text-align: center;
     padding: 15px 0;
     font-size: 1.1rem;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 15px;
   }
 }
